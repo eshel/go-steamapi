@@ -125,7 +125,7 @@ type KillEaterScoreType struct {
 
 // Fetches the Schema for the given game.
 func GetSchema(app int, language, apiKey string) (*Schema, error) {
-	getSchema := NewSteamMethod("IEconItems_"+strconv.Itoa(app), "GetSchema", 1)
+	getSchema := NewSteamMethod("IEconItems_"+strconv.Itoa(app), "GetSchema", 2)
 
 	vals := url.Values{}
 	vals.Add("key", apiKey)
